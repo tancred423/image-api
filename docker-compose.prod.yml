@@ -6,4 +6,6 @@ services:
     image: ghcr.io/tancred423/image-api:latest
     ports:
       - "${PORT}:4000"
+    volumes:
+      - ./images:/app/src/images
     restart: unless-stopped

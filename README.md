@@ -28,6 +28,9 @@ Supported image types are `.png`, `.jpg`, `.jpeg`, `.gif`, `.webp`.
 docker compose -f docker-compose.prod.yml up -d
 ```
 
+Images are not being pushed to the repo nor being baked into the docker image because of that. So add the folder with
+the files here: `${DEPLOY_PATH}/images`
+
 ### Environment Variables
 
 Copy the `.env.skel` to `.env` and choose your port.
