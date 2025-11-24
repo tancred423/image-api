@@ -9,9 +9,9 @@ services:
     volumes:
       - ./images:/app/src/images
     networks:
-      - mysql-network
+      - servant-network
     restart: unless-stopped
 
 networks:
-  mysql-network:
+  servant-network:
     external: true

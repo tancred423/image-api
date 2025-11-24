@@ -13,4 +13,10 @@ services:
       - "${PORT}:4000"
     env_file:
       - .env
+    networks:
+      - servant-network
     restart: unless-stopped
+
+networks:
+  servant-network:
+    external: true
