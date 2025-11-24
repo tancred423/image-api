@@ -8,4 +8,10 @@ services:
       - "${PORT}:4000"
     volumes:
       - ./images:/app/src/images
+    networks:
+      - mysql-network
     restart: unless-stopped
+
+networks:
+  mysql-network:
+    external: true
